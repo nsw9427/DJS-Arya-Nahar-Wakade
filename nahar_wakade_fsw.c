@@ -58,7 +58,7 @@ int main()
             case LAUNCH_PAD: if(currAlt>5 && velocity>2)
                              state = ASCENT;
             break;
-            case ASCENT: if(prevAlt>currAlt && velocity<5)
+            case ASCENT: if(velocity<5)
                         {
                             apogee = prevAlt;
                             state = APOGEE;
